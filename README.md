@@ -1,3 +1,5 @@
 # rock-paper-scissors
 
-# Odin Project rocker-paper-scissors game project
+Odin Project rock-paper-scissors console game.
+
+Learning to take user entries, generate random numbers, and track a score.
