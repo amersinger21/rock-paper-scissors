@@ -8,6 +8,10 @@ function getComputerChoice(){
 
 function playRound(playerSelection, computerSelection) {
 
+    while (!playerSelection.match(/rock|paper|scissors/i)){
+        return "Invalid";
+    }
+
     if (playerSelection.match(/rock/i)) {
         if (computerSelection === "Rock") {
             return "Tie!";
@@ -87,6 +91,8 @@ function game() {
         return "Computer wins the game!";
     }
 
+    console.log("Player score: " + playerScore);
+    console.log("Computer score: " + computerScore);
     return "Tie game!";  
 }
 
