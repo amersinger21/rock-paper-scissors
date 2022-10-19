@@ -12,17 +12,18 @@ function getPlayerChoice() {
  selection.forEach(item => {
         item.addEventListener('click', ()=>{
             playerChoice = item.id;
-            //console.log(playerChoice);
         });
     }); 
 
 start.addEventListener('click', game);
+start.addEventListener('click', ()=>{
+    playerChoice= '';
+    });
 
 function getComputerChoice(){
     let options = ["Rock", "Paper", "Scissors"];
 
     let choice = Math.floor(Math.random() * 3 + 0);
-    //console.log(options[choice]);
     return options[choice];
 }
 
@@ -69,7 +70,7 @@ function playRound(playerChoice, computerSelection) {
 
     else {
         console.log("Make a selection");
-        return "stop";
+        return;
     };
 }
 let computerScore = 0;
@@ -103,19 +104,19 @@ function game() {
         }
    
 
-    if (playerScore > computerScore){
-        console.log("Player score: " + playerScore);
-        console.log("Computer score: " + computerScore);
-        return "Player Wins the Game!";
-    }
+//     if (playerScore > computerScore){
+//         console.log("Player score: " + playerScore);
+//         console.log("Computer score: " + computerScore);
+//         return "Player Wins the Game!";
+//     }
 
-    if (playerScore < computerScore) {
-        console.log("Player score: " + playerScore);
-        console.log("Computer score: " + computerScore);
-        return "Computer wins the game!";
-    }
+//     if (playerScore < computerScore) {
+//         console.log("Player score: " + playerScore);
+//         console.log("Computer score: " + computerScore);
+//         return "Computer wins the game!";
+//     }
 
-    console.log("Player score: " + playerScore);
-    console.log("Computer score: " + computerScore);
-    return "Tie game!";  
+//     console.log("Player score: " + playerScore);
+//     console.log("Computer score: " + computerScore);
+//     return "Tie game!";  
 }
