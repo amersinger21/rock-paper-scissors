@@ -1,11 +1,9 @@
 const computerSpace = document.querySelector("#computer-choice-area");
 const computerPoints = document.querySelector("#cscore");
-const computerChoiceDisplay = document.createElement("p");
 
 const selection = document.querySelectorAll(".choice-btn");
 const playerSpace = document.querySelector("#player-choice-area");
 const playerPoints = document.querySelector("#pscore");
-const playerChoiceDisplay = document.createElement("p");
 
 const start = document.querySelector("#begin");
 const textbox = document.querySelector("#results-space");
@@ -24,9 +22,8 @@ function getPlayerChoice() {
 selection.forEach((item) => {
   item.addEventListener("click", () => {
     playerChoice = item.id;
-    playerChoiceDisplay.innerText = playerChoice;
-    playerSpace.appendChild(playerChoiceDisplay);
-    computerChoiceDisplay.innerText = "";
+    playerSpace.innerText = playerChoice;
+    computerSpace.innerText = "";
   });
 });
 
@@ -43,8 +40,7 @@ function getComputerChoice() {
 }
 
 function playRound(playerChoice, computerSelection) {
-  computerChoiceDisplay.innerText = computerSelection;
-  computerSpace.appendChild(computerChoiceDisplay);
+  computerSpace.innerText = computerSelection;
 
   if (playerChoice.match(/rock/i)) {
     if (computerSelection === "Rock") {
@@ -81,8 +77,8 @@ function playRound(playerChoice, computerSelection) {
       return "Tie!";
     }
   } else {
-    playerChoiceDisplay.innerText = "";
-    computerChoiceDisplay.innerText = "";
+    playerSpace.innerText = "";
+    computerSpace.innerText = "";
     return "Make a selection";
   }
 }

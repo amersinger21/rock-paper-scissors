@@ -8,23 +8,35 @@
     <script src="./main.js" defer></script>
   </head>
   <body>
-    <h1 class="header-main">So What's It Gonna Be??</h1>
+    <div class="wrapper">
+      <h1 class="header-main">So What's It Gonna Be??</h1>
 
-    <button id="Rock" class="btn choice-btn">Rock</button>
-    <button id="Paper" class="btn choice-btn">Paper</button>
-    <button id="Scissors" class="btn choice-btn">Scissors</button>
-    <button id="begin" class="btn start-btn">Begin!</button>
+      <div class="btn-wrapper">
+        <button id="Rock" class="btn choice-btn">Rock</button>
+        <button id="Paper" class="btn choice-btn">Paper</button>
+        <button id="Scissors" class="btn choice-btn">Scissors</button>
+        <button id="begin" class="btn start-btn">Begin!</button>
+      </div>
 
-    <div id="player-choice-area">PLAYER SELECTION</div>
-    <div id="computer-choice-area">COMPUTER SELECTION</div>
+      <div class="selections">
+        <div class="selection-area">
+          <p>PLAYER SELECTION</p>
+          <p id="player-choice-area"></p>
+        </div>
+        <div class="selection-area">
+          <p>COMPUTER SELECTION</p>
+          <p id="computer-choice-area"></p>
+        </div>
+      </div>
 
-    <div class="scoreboard container">
-      <h3 class="scoreboard-label">Player Score:</h3>
-      <p id="pscore">0</p>
-      <h3 class="scoreboard-label">Computer Score:</h3>
-      <p id="cscore">0</p>
+      <div class="scoreboard">
+        <h3 class="scoreboard-label">Player Score:</h3>
+        <p id="pscore">0</p>
+        <h3 class="scoreboard-label">Computer Score:</h3>
+        <p id="cscore">0</p>
+      </div>
+
+      <div id="results-space"></div>
     </div>
-
-    <div id="results-space"></div>
   </body>
 </html>

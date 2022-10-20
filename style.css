@@ -1,0 +1,48 @@
+:root {
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+.wrapper {
+  max-width: 80ch;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.selections,
+.scoreboard,
+.btn-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1em;
+}
+
+.selection-area {
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 2em;
+}
+
+p {
+  text-align: center;
+}
+
+#player-choice-area,
+#computer-choice-area {
+  min-height: 6em;
+  width: auto;
+}
+
+.scoreboard {
+  margin-top: 1em;
+}
+
+h1 {
+  text-align: center;
+}
