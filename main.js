@@ -28,7 +28,7 @@ selection.forEach((item) => {
 	item.addEventListener("click", () => {
 		playerChoice = item.id;
 		playerSpace.innerText = playerChoice;
-		computerSpace.innerText = "";
+		computerChoiceImg.src = "";
 	});
 });
 
