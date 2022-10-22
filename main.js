@@ -27,7 +27,7 @@ function getPlayerChoice() {
 selection.forEach((item) => {
 	item.addEventListener("click", () => {
 		playerChoice = item.id;
-		computerChoiceImg.src = null;
+		computerChoiceImg.src = "";
 	});
 });
 
