@@ -1,1 +1,42 @@
-<script src="./main.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Rock, Paper, Scissors</title>
+		<script src="./main.js" defer></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1 class="header-main">So What's It Gonna Be??</h1>
+
+			<div class="btn-wrapper">
+				<button id="Rock" class="btn choice-btn">
+					<img src="./icons/stone.png" alt="Rock" />
+				</button>
+				<button id="Paper" class="btn choice-btn">
+					<img src="./icons/sheet.png" alt="Paper" />
+				</button>
+				<button id="Scissors" class="btn choice-btn">
+					<img src="./icons/scissors.png" alt="Scissors" />
+				</button>
+				<button id="begin" class="btn start-btn">Begin!</button>
+			</div>
+
+			<div class="selections">
+				<h4>COMPUTER SELECTION</h4>
+				<div id="computer-choice-area"></div>
+			</div>
+
+			<div class="scoreboard">
+				<p class="scoreboard-label">Player Score:</p>
+				<p id="pscore" class="score">0</p>
+				<p class="scoreboard-label">Computer Score:</p>
+				<p id="cscore" class="score">0</p>
+			</div>
+
+			<div id="results-space"></div>
+		</div>
+	</body>
+</html>
