@@ -27,8 +27,7 @@ function getPlayerChoice() {
 selection.forEach((item) => {
 	item.addEventListener("click", () => {
 		playerChoice = item.id;
-		playerSpace.innerText = playerChoice;
-		computerChoiceImg.src = "";
+		computerChoiceImg.src = null;
 	});
 });
 
@@ -59,7 +58,7 @@ function getComputerChoice() {
 	}
 
 	if (options[choice] === "Paper") {
-		computerChoiceImg.src, "./icons/sheet.png";
+		computerChoiceImg.src = "./icons/sheet.png";
 		return options[choice];
 	}
 
