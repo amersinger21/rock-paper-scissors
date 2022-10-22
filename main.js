@@ -54,17 +54,17 @@ function getComputerChoice() {
 	let choice = Math.floor(Math.random() * 3 + 0);
 
 	if (options[choice] === "Rock") {
-		computerChoiceImg.setAttribute(src, "./icons/stone.png");
+		computerChoiceImg.src = "./icons/stone.png";
 		return options[choice];
 	}
 
 	if (options[choice] === "Paper") {
-		computerChoiceImg.setAttribute(src, "./icons/sheet.png");
+		computerChoiceImg.src, "./icons/sheet.png";
 		return options[choice];
 	}
 
 	if (options[choice] === "Scissors") {
-		computerChoiceImg.setAttribute(src, "./icons/scissors.png");
+		computerChoiceImg.src = "./icons/scissors.png";
 		return options[choice];
 	}
 }
