@@ -1,6 +1,6 @@
 const computerSpace = document.querySelector("#computer-choice-area");
 const computerPoints = document.querySelector("#cscore");
-const computerChoiceImg = document.createElement("img");
+const computerChoiceImg = document.querySelector("#computerChoiceImg");
 
 const selection = document.querySelectorAll(".choice-btn");
 const playerSpace = document.querySelector("#player-choice-area");
