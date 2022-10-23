@@ -3,7 +3,6 @@ const computerPoints = document.querySelector("#cscore");
 const computerChoiceImg = document.querySelector("#computerChoiceImg");
 
 const selection = document.querySelectorAll(".choice-btn");
-const playerSpace = document.querySelector("#player-choice-area");
 const playerPoints = document.querySelector("#pscore");
 
 const start = document.querySelector("#begin");
@@ -106,8 +105,7 @@ function playRound(playerChoice, computerSelection) {
 			return "Tie!";
 		}
 	} else {
-		playerSpace.innerText = "";
-		computerSpace.innerText = "";
+		computerChoiceImg.src = "";
 		return "Make a selection";
 	}
 }
