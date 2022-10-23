@@ -166,7 +166,7 @@ h4,
 		position: absolute;
 		top: 0;
 		padding-block: calc(0.5 * var(--padding-std));
-		margin: 0 auto;
+		margin: 1em auto;
 	}
 
 	h4 {
