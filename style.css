@@ -11,6 +11,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	/* outline: 1px solid red; */
 }
 
 body {
@@ -36,8 +37,11 @@ body:focus {
 	padding: var(--padding-std);
 }
 
+h1 {
+	text-align: center;
+}
+
 .btn-wrapper,
-h1,
 h4,
 #results-space {
 	display: flex;
@@ -65,7 +69,7 @@ h4,
 	padding-block: var(--padding-std);
 }
 
-#computer-choice-area {
+.selections > img {
 	display: flex;
 	min-height: 5em;
 	justify-content: center;
@@ -129,4 +133,51 @@ h4,
 #results-space {
 	text-align: center;
 	font-size: 2em;
+	min-height: 2.5em;
+}
+
+@media (max-width: 500px) {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 2em;
+		margin-inline: auto;
+	}
+
+	.btn-wrapper {
+		flex-direction: column;
+	}
+
+	.btn {
+		padding: var(--padding-std) calc(2 * var(--padding-std));
+	}
+
+	.choice-btn {
+		padding: calc(2.5 * var(--padding-std));
+	}
+
+	h1 {
+		text-align: center;
+		display: block;
+		position: absolute;
+		top: 0;
+		padding-block: 0.5em;
+		margin: 0 auto;
+	}
+
+	h4 {
+		font-size: 1.5em;
+		text-align: center;
+		width: min-content;
+	}
+
+	.scoreboard-label {
+		font-size: 1.5em;
+	}
+
+	#results-space {
+		min-height: 3.5em;
+	}
 }

@@ -1,4 +1,3 @@
-const computerSpace = document.querySelector("#computer-choice-area");
 const computerPoints = document.querySelector("#cscore");
 const computerChoiceImg = document.querySelector("#computerChoiceImg");
 
@@ -7,13 +6,11 @@ const playerPoints = document.querySelector("#pscore");
 
 const start = document.querySelector("#begin");
 const textbox = document.querySelector("#results-space");
-const resultText = document.createElement("p");
+const resultText = document.querySelector("#resultText");
 
 const originalStartColor = window
 	.getComputedStyle(start, null)
 	.getPropertyValue("background-color");
-
-resultText.id = "resultText";
 
 let playerChoice = "";
 let computerScore = 0;
@@ -27,7 +24,7 @@ selection.forEach((item) => {
 	item.addEventListener("click", () => {
 		playerChoice = item.id;
 		computerChoiceImg.src = "";
-                resultsText.innerText = "";
+		resultText.innerText = "";
 	});
 });
 
@@ -69,8 +66,6 @@ function getComputerChoice() {
 }
 
 function playRound(playerChoice, computerSelection) {
-	computerSpace.appendChild(computerChoiceImg);
-
 	if (playerChoice.match(/rock/i)) {
 		if (computerSelection === "Rock") {
 			return "Tie!";
@@ -107,7 +102,8 @@ function playRound(playerChoice, computerSelection) {
 		}
 	} else {
 		computerChoiceImg.src = "";
-		return "Make a selection";
+		alert("Make a Selection");
+		return;
 	}
 }
 
