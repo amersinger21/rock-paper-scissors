@@ -102,6 +102,7 @@ function playRound(playerChoice, computerSelection) {
 		}
 	} else {
 		computerChoiceImg.src = "";
+		resultText.innerText = "";
 		alert("Make a Selection");
 		return;
 	}
