@@ -163,8 +163,6 @@ h4,
 	h1 {
 		text-align: center;
 		display: block;
-		position: absolute;
-		top: 0;
 		padding-block: calc(0.5 * var(--padding-std));
 		margin: 1em auto;
 	}
